@@ -3,7 +3,7 @@
 <div class="container">
     <div class="card login">
 <div class="card header">
-<h4>Sign Up New User </h4>
+<h4>Sign Up New User</h4>
 </div>
 <form action="/signup" method="POST">
     <br/>
