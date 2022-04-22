@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ReminderEmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,4 +37,5 @@ Route:: get("ordernow",[ProductController:: class, 'orderNow']);
 Route:: post("orderplace",[ProductController:: class, 'OrderPlace']);
 Route:: get("myorderlist",[ProductController:: class, 'myorderlist']);
 
+Route::get("/send-reminder-email", [ReminderEmailController:: class, 'SendReminderEmail']);
 
